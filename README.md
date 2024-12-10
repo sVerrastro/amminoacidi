@@ -1,0 +1,2 @@
+# amminoacidi
+guess game
