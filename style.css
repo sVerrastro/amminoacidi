@@ -161,6 +161,7 @@ input[type=text]:focus {
 select {
     width: 20vh;
     height: 4vh;
+    font-size: 2vh;
     background-color: var(--primary_background);
     border: .1vh solid var(--border);
     color: var(--primary_text);
@@ -236,9 +237,9 @@ select:focus {
 }
 
 #button_start {
-	width: 20vh;
-	height: 7vh;
-	font-size: 4vh;
+    width: 20vh;
+    height: 7vh;
+    font-size: 4vh;
 }
 
 #author {
@@ -278,3 +279,49 @@ select:focus {
 .mb-3 { margin-bottom: 3vh; }
 .mb-4 { margin-bottom: 4vh; }
 .mb-5 { margin-bottom: 5vh; }
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    header {
+        height: auto;
+        padding: 2vh 1vh;
+    }
+
+    .title {
+        font-size: 3.5vh;
+    }
+
+    .subtitle {
+        font-size: 2.5vh;
+    }
+
+    #main {
+        height: 83vh;
+        padding: 2vh;
+    }
+
+    .row {
+        flex-direction: column;
+        margin-bottom: 2vh;
+    }
+
+    .box {
+        padding: 1vh;
+        width: 90%;
+    }
+
+    #div_timer, #div_right, #div_wrong {
+        width: 10vh;
+    }
+
+    .button, .counter {
+        padding: 1vh;
+        font-size: 2.5vh;
+        width: 15vh;
+    }
+
+    input[type=text], select {
+        width: 100%;
+        font-size: 2.5vh;
+    }
+}

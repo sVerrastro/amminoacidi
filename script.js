@@ -9,6 +9,7 @@ var wrong = 0;
 function drawAcid() {
     let count = amminoacidi.length;
     let index = Math.floor(Math.random() * count);
+    //console.table(amminoacidi[index]);
     return amminoacidi[index];
 }
 
@@ -141,7 +142,7 @@ function guess() {
     let divRight = document.getElementById('div_right');
     let divWrong = document.getElementById('div_wrong');
 
-    let nome = editName.value;
+    let nome = editName.value.toLowerCase();
 
     if (nome == acid.nome) {
         divRight.innerText = ++right;
